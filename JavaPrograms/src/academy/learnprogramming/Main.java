@@ -24,6 +24,12 @@ public class Main {
         if (playerChoice.equals("rock")){
             playerValue = ROCK;
         }
+        else if (playerChoice.equals("paper")){
+            playerValue = PAPER;
+        }
+        else if (playerChoice.equals("scissors")){
+            playerValue = SCISSORS;
+        }
         System.out.printf("Player chose %s, the value is %s%n" , playerChoice, playerValue);
         scanner.close();
     }
