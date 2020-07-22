@@ -32,7 +32,10 @@ public class Main {
         if (playerValue == computerValue) {
             System.out.println("It's a draw!");
         } else if ((playerValue - 1 == computerValue) || (playerValue == ROCK && computerValue == SCISSORS)) {
-            System.out.printf("YOU WIN!!");
+            System.out.println("YOU WIN!!");
+        }
+        else {
+            System.out.println("Computer Wins!");
         }
     }
 }
