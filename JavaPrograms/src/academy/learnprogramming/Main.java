@@ -30,8 +30,9 @@ public class Main {
         else if (playerChoice.equals("scissors")){
             playerValue = SCISSORS;
         }
-        System.out.printf("Player chose %s, the value is %s%n" , playerChoice, playerValue);
-        scanner.close();
+        if (playerValue == computerValue){
+            System.out.println("It's a draw!");
+        }
     }
 }
 
