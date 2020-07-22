@@ -21,17 +21,18 @@ public class Main {
         System.out.println("Please enter rock, paper or scissors ");
         playerChoice = scanner.nextLine().toLowerCase();
 
-        if (playerChoice.equals("rock")){
+        if (playerChoice.equals("rock")) {
             playerValue = ROCK;
-        }
-        else if (playerChoice.equals("paper")){
+        } else if (playerChoice.equals("paper")) {
             playerValue = PAPER;
-        }
-        else if (playerChoice.equals("scissors")){
+        } else if (playerChoice.equals("scissors")) {
+
             playerValue = SCISSORS;
         }
-        if (playerValue == computerValue){
+        if (playerValue == computerValue) {
             System.out.println("It's a draw!");
+        } else if ((playerValue - 1 == computerValue) || (playerValue == ROCK && computerValue == SCISSORS)) {
+            System.out.printf("YOU WIN!!");
         }
     }
 }
